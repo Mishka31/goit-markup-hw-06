@@ -345,6 +345,21 @@
                         </li>
                     </ul>
                 </div>
+                <div class="subscribe-form">
+                    <p class="title-join subscribe">Подпишитесь на рассылку</p>
+                    <form action="#" class="footer-subscribe">
+                        <label for="" class="label-mail-footer">
+                            <input name="user-mail" type="email" class="input-mail-footer" placeholder="E-mail" required>
+                        </label>
+                        <div class="order-form-btn-wrapper">
+                            <button type="submit" class="subscribe-btn">Подписаться
+                                <svg class="social-links-circles icon-send">
+                                    <use href="./sprite.svg#icon-send"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
         </div>
     </footer>
     <div>
@@ -357,20 +372,36 @@
                 <form action="#" class="order-form">
                     <p class="title-order-form">Оставьте свои данные, мы вам перезвоним</p>
                     <label class="order-form-label">Имя
-                        <input name="user-name" type="text" class="order-form-input input-name" placeholder="Имя" required minlength="2">
+                        <span class="ordar-input-wrapper">
+                            <input name="user-name" type="text" class="order-form-input input-name" placeholder="" required minlength="2">
+                            <svg class="order-form-icon name-icon">
+                                <use href="./sprite.svg#icon-name"></use>
+                            </svg>
+                        </span>
                     </label>
                     <label class="order-form-label">Телефон
-                        <input name="user-phone" type="tel" class="order-form-input input-phone" placeholder="Телефон Пример (096-111-11-11)" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                        <span class="ordar-input-wrapper">
+                            <input name="user-phone" type="tel" class="order-form-input input-phone" placeholder="" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                            <svg class="order-form-icon phone-icon">
+                                <use href="./sprite.svg#icon-phone-svg"></use>
+                            </svg>
+                        </span>
                     </label>
                     <label class="order-form-label">Почта
-                        <input name="user-mail" type="email" class="order-form-input input-mail" placeholder="Почта" required>
+                        <span class="ordar-input-wrapper">
+                            <input name="user-mail" type="email" class="order-form-input input-mail" placeholder="" required>
+                            <svg class="order-form-icon mail-icon">
+                                <use href="./sprite.svg#icon-mail-order"></use>
+                            </svg>
+                        </span>
                     </label>
                     <label class="order-form-label">Коментарий
-                        <textarea name="user-comments" class="order-form-input input-comments" placeholder="Коментарий"></textarea>
+                        <textarea name="user-comments" class="order-form-input input-comments" placeholder="Введите текст"></textarea>
                         <!-- <input name="user-comments" type="text" class="order-form-input input-comments" placeholder="Коментарий"> -->
                     </label>
-                    <input id="checkbox-agre-with-policy" name="user-policy" type="checkbox" value="agre" class="order-form-input-checkbox input-checkbox"><label for="checkbox-agre-with-policy">Соглашаюсь с рассылкой и принимаю</label>
-                    <a href="#">Условия договора</a>
+                    <input id="policy-check" name="user-policy" type="checkbox" value="agre" class="order-form-input-checkbox input-checkbox visually-hidden">
+                    <label for="policy-check" class="checkbox-agre-with-policy">Соглашаюсь с рассылкой и принимаю   <a class="link-policy" href="#"> Условия договора</a>
+                    </label>
                     
                 
                     <div class="order-form-btn-wrapper">
