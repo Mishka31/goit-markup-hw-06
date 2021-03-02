@@ -824,6 +824,7 @@ a {
   color: var(--claer-white);
   font-size: 16px;
   line-height: 1.875;
+  border: 0px;
 }
 .order-form-icon {
   position: absolute;
@@ -913,7 +914,7 @@ a {
   text-align: center;
   letter-spacing: 0.06em;
   padding-left: 29px;
-
+  border: 0px;
   color: #ffffff;
 }
 /* .label-mail-footer {
